@@ -1,0 +1,29 @@
+Criar projeto:
+	Criar pasta
+	Vai para a pasta
+	composer create-project --prefer-dist laravel\laravel [nome do projeto]
+
+	controller ->	/app/http/controllers/controller.php
+
+	router ->	/routes/web.php
+
+	view ->		/resources/views/home.blade.php
+			/resources/views/clientes/add.blade.php
+			/resources/views/clientes/delete.blade.php
+	model ->	/app/[tabela].php
+
+	constants ->	/config/constants.php
+
+	migration ->
+	database
+	tabela
+
+	(pacotes - Ex.: scaffold)
+	- adicionar pacote no arquivo composer.json ("require")
+	- composer install
+	- app/config/database -> user/pass
+	- php artisan migrate:install
+	- app/config/providers -> adiciona provider ("class")
+	- php artisan (apenas para ver se esta funcionando)
+	- php artisan generate:scaffold [tabela] --schema [campos]
+	- php artisan migrate
